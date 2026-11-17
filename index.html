@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio CV - Muhammad Qeishya Alfaiza</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome untuk ikon profesional -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Custom CSS Terpisah -->
+    <link rel="stylesheet" href="cv.css" />
+  </head>
+  <body>
+    <!-- 4. NAVIGATION BARS -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#"
+          ><i class="fas fa-terminal me-2"></i>Muhammad Qeishya Alfaiza.</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Profil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portofolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Keahlian</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Pengalaman</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION DENGAN FOTO PROFIL (ape1.jpeg) -->
+    <header class="hero-section text-center">
+      <div class="container">
+        <div class="profile-avatar mb-3 shadow">
+          <!-- Memanggil foto ape1.jpeg dari folder yang sama -->
+          <img
+            src="gmbar1.jpg"
+            alt="Foto Profil Ahmad Afrizal Zaelani"
+            class="img-fluid rounded-circle"
+          />
+        </div>
+        <h1 class="display-5 fw-bold text-white">Muhammad Qeishya Alfaiza</h1>
+        <p class="lead text-light mb-4">
+          Mahasiswa Teknologi Rekayasa Perangkat Lunak | Full-Stack Developer &
+          SQA
+        </p>
+        <!-- Tombol Interaksi jQuery -->
+        <button
+          id="btnToggleBio"
+          class="btn btn-light btn-custom fw-semibold shadow-sm"
+        >
+          <i class="fas fa-eye me-2"></i>Sembunyikan / Tampilkan Ringkasan Cepat
+        </button>
+      </div>
+    </header>
+
+    <main class="container my-5">
+      <!-- Area Efek jQuery (Hide/Show & Fade) -->
+      <section id="quickBio" class="row mb-5">
+        <div class="col-md-12">
+          <div class="card p-4 custom-card border-start-custom">
+            <h3>
+              <i class="fas fa-id-card text-primary me-2"></i>Tentang Saya
+            </h3>
+            <p class="text-muted mb-0">
+              Mahasiswa TRPL di Politeknik Manahijul Huda yang aktif mendalami
+              pengembangan web modern (Laravel, React, Inertia.js), pengujian
+              perangkat lunak (SQA), serta integrasi sistem berbasis perangkat
+              keras mikrokontroler. Berfokus pada penulisan kode yang bersih dan
+              solutif.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. CAROUSEL -->
+      <section id="portfolio" class="mb-5">
+        <div class="section-title text-center mb-4">
+          <h2 class="fw-bold">Galeri Proyek & Portofolio</h2>
+          <p class="text-muted">
+            Beberapa dokumentasi proyek pengembangan perangkat lunak dan sistem.
+          </p>
+        </div>
+        <div
+          id="projectCarousel"
+          class="carousel slide shadow rounded overflow-hidden"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#projectCarousel"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#projectCarousel"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#projectCarousel"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80"
+                class="d-block w-100 carousel-img"
+                alt="Proyek Web 1"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Sistem Absensi RFID Otomatis</h5>
+                <p>
+                  Integrasi hardware ESP8266 & MFRC522 dengan Laravel API
+                  Backend.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80"
+                class="d-block w-100 carousel-img"
+                alt="Proyek Web 2"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Portal Media Organisasi (UKM Meditif)</h5>
+                <p>
+                  Manajemen konten dinamis dengan panel administrasi CRUD
+                  lengkap.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80"
+                class="d-block w-100 carousel-img"
+                alt="Proyek Web 3"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Modern Web Stack Development</h5>
+                <p>
+                  Pengembangan aplikasi reaktif menggunakan Laravel, Inertia.js,
+                  dan React.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#projectCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#projectCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </section>
+
+      <!-- 3. COLLAPSIBLE (Accordion) -->
+      <section id="skills" class="mb-5">
+        <div class="section-title text-center mb-4">
+          <h2 class="fw-bold">Keahlian Profesional</h2>
+          <p class="text-muted">
+            Kompetensi teknis di bidang teknologi informasi dan rekayasa.
+          </p>
+        </div>
+        <div class="accordion shadow-sm" id="skillsAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button fw-semibold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+              >
+                <i class="fas fa-code text-primary me-2"></i> Full-Stack Web
+                Development & Framework
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#skillsAccordion"
+            >
+              <div class="accordion-body">
+                Menguasai PHP Laravel, Laravel Breeze, Inertia.js, React, Vite,
+                Tailwind CSS, Bootstrap, serta pengelolaan basis data relasional
+                MySQL.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed fw-semibold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+              >
+                <i class="fas fa-bug text-primary me-2"></i> Software Quality
+                Assurance (SQA)
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#skillsAccordion"
+            >
+              <div class="accordion-body">
+                Berpengalaman dalam analisis kode statis, dokumentasi defect
+                log, script refactoring, serta pengujian logika komputasi
+                aplikasi.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed fw-semibold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+              >
+                <i class="fas fa-microchip text-primary me-2"></i> Sistem
+                Embedded & Hardware Prototyping
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#skillsAccordion"
+            >
+              <div class="accordion-body">
+                Terbiasa merancang sistem otomatisasi menggunakan mikrokontroler
+                (Arduino IDE, ESP8266, modul RFID, dan I2C LCD).
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. TABLE -->
+      <section id="experience" class="mb-5">
+        <div class="section-title text-center mb-4">
+          <h2 class="fw-bold">Riwayat Pendidikan & Proyek</h2>
+          <p class="text-muted">
+            Rekam jejak akademik dan keterlibatan organisasi.
+          </p>
+        </div>
+        <div class="card custom-card p-3">
+          <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0">
+              <thead class="table-dark-custom">
+                <tr>
+                  <th>No</th>
+                  <th>Institusi / Proyek</th>
+                  <th>Peran & Keterangan</th>
+                  <th>Periode</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>1</strong></td>
+                  <td>Politeknik Manahijul Huda (TRPL)</td>
+                  <td>Mahasiswa Aktif (NIM: 2501018)</td>
+                  <td>2025 - Sekarang</td>
+                </tr>
+                <tr>
+                  <td><strong>2</strong></td>
+                  <td>UKM Meditif (Media Kreatif)</td>
+                  <td>Anggota / Web Developer Organisasi</td>
+                  <td>2025 - Sekarang</td>
+                </tr>
+                <tr>
+                  <td><strong>3</strong></td>
+                  <td>Sistem Absensi RFID Otomatis</td>
+                  <td>Lead Developer (Hardware & API Integration)</td>
+                  <td>2026</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Kontak / Call to Action -->
+      <section id="contact" class="text-center mb-4">
+        <div
+          class="card custom-card p-4 bg-white border-top border-primary border-4"
+        >
+          <h3 class="fw-bold">Hubungi Saya</h3>
+          <p class="text-muted">
+            Terbuka untuk kesempatan kolaborasi, magang, atau diskusi proyek
+            profesional.
+          </p>
+          <div class="mt-3">
+            <a
+              href="mailto:ahmad@example.com"
+              class="btn btn-primary btn-custom m-1"
+              ><i class="fas fa-envelope me-2"></i>Kirim Email</a
+            >
+            <a
+              href="https://github.com/mhmmdkesya12-ship-it"
+              target="_blank"
+              class="btn btn-dark btn-custom m-1"
+              ><i class="fab fa-github me-2"></i>GitHub Profil</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-custom text-white text-center py-4">
+      <div class="container">
+        <p class="mb-0">
+          &copy; 2026 Muhammad Qeishya Alfaiza. Dibuat dengan standar
+          profesional untuk UTS Pemrograman Web 1.
+        </p>
+      </div>
+    </footer>
+
+    <!-- jQuery dan Bootstrap JS Bundle -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Animasi jQuery Custom -->
+    <script>
+      $(document).ready(function () {
+        $("#btnToggleBio").click(function () {
+          $("#quickBio").fadeToggle("slow", function () {
+            if ($(this).is(":visible")) {
+              $("#btnToggleBio").html(
+                '<i class="fas fa-eye-slash me-2"></i>Sembunyikan Ringkasan Cepat',
+              );
+            } else {
+              $("#btnToggleBio").html(
+                '<i class="fas fa-eye me-2"></i>Tampilkan Ringkasan Cepat',
+              );
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
